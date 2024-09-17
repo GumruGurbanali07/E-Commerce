@@ -13,3 +13,4 @@ C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\ob
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net8.0\refint\ECommerceAPI.Application.dll
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net8.0\ECommerceAPI.Application.pdb
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net8.0\ref\ECommerceAPI.Application.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net8.0\ECommerceAPI.Application.sourcelink.json

@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36B2E9BB-AF93-4C80-B06C-2431C3C40A65}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36B2E9BB-AF93-4C80-B06C-2431C3C40A65}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36B2E9BB-AF93-4C80-B06C-2431C3C40A65}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\concrete\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36B2E9BB-AF93-4C80-B06C-2431C3C40A65}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\concrete\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0648C371-C25A-4180-96F0-14FD67ED08AF}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\abstract\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0648C371-C25A-4180-96F0-14FD67ED08AF}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\abstract\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{446B4A45-E4DE-42DF-9028-2C354D82FC5F}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\core\\ecommerceapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{446B4A45-E4DE-42DF-9028-2C354D82FC5F}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|solutionrelative:core\\ecommerceapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{446B4A45-E4DE-42DF-9028-2C354D82FC5F}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\core\\ecommerceapi.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{446B4A45-E4DE-42DF-9028-2C354D82FC5F}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|solutionrelative:core\\ecommerceapi.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1078213-22B0-4A96-A59A-AA5CF2A815FE}|Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\infrastructure\\ecommerce.infrastructure\\ecommerceapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F1078213-22B0-4A96-A59A-AA5CF2A815FE}|Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\ecommerce.infrastructure\\ecommerceapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,110 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T06:02:01.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Program.cs",
-              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T05:58:27.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
-              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T05:55:03.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Concrete\\ProductService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\Concrete\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Concrete\\ProductService.cs",
-              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\Concrete\\ProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T05:01:16.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstract\\IProductService.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Abstract\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstract\\IProductService.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Abstract\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T04:59:56.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Domain\\Entities\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T04:51:09.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Domain\\Entities\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Domain\\Entities\\Common\\BaseEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T04:50:19.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ECommerceAPI.Infrastructure",
-              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-17T04:40:46.715Z",
-              "EditorCaption": ""
             }
           ]
         }

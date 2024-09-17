@@ -15,3 +15,6 @@ C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Pers
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\refint\ECommerceAPI.Persistence.dll
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.pdb
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ref\ECommerceAPI.Persistence.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Persistence.runtimeconfig.json
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.sourcelink.json
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.genruntimeconfig.cache
