@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FGYmeyzJD5M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

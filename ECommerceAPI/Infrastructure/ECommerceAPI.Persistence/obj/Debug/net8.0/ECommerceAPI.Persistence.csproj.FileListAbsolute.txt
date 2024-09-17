@@ -1,0 +1,17 @@
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Persistence.deps.json
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Persistence.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Persistence.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Application.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Domain.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Application.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net8.0\ECommerceAPI.Domain.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.csproj.AssemblyReference.cache
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.AssemblyInfoInputs.cache
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.AssemblyInfo.cs
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerc.A54A3D56.Up2Date
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\refint\ECommerceAPI.Persistence.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ECommerceAPI.Persistence.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net8.0\ref\ECommerceAPI.Persistence.dll
