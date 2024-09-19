@@ -16,7 +16,7 @@ namespace ECommerceAPI.Persistence
 	{
 		public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
 		{
-			services.AddDbContext<AppDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("PostgreSQL")), ServiceLifetime.Scoped);
+			services.AddDbContext<AppDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("PostgreSQL")));
 			services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
 			services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 			services.AddScoped<IProductReadRepository, ProductReadRepository>();
