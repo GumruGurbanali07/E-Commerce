@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ECommerceCLI';
+  constructor(private toastrService: CustomToastrService) {
+    toastrService.message("Hello","World",{
+      messageType:ToastrMessageType.Success,
+      position: ToastrPosition.BottomLeft
+    });
+   }
+
+  ngOnInit(): void {
+   
+ 
+    //https://ngx-toastr.vercel.app/
 }
+}
+
