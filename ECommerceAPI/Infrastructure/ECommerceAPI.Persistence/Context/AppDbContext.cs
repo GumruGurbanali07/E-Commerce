@@ -31,6 +31,9 @@ namespace ECommerceAPI.Persistence.Context
 			}
 			return await base.SaveChangesAsync(cancellationToken);
 
+//Bu kod hər dəfə bir dəyişiklik bazaya yazılanda(yeni obyekt əlavə ediləndə və ya mövcud obyekt dəyişdiriləndə):
+//Yeni əlavə edilən obyektlər üçün CreatedDate avtomatik olaraq indiki tarixə təyin edilir.
+//Dəyişdirilən obyektlər üçün isə UpdateDate cari tarixə yenilənir.
 		}
 	}
 }
