@@ -1,7 +1,10 @@
 ﻿using ECommerceAPI.Application.Repository;
+using ECommerceAPI.Application.ViewModel.Product;
 using ECommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using ECommerceAPI.Domain.Entities;
 
 namespace ECommerceAPI.API.Controllers
 {
@@ -18,17 +21,7 @@ namespace ECommerceAPI.API.Controllers
 			_productReadRepository = productReadRepository;
 		}
 
-		[HttpGet]
-		public async Task Get() //Task olmazsa dispose olar
-		{
-			await _productWriteRepository.AddAsync(new() { Name = "H", Price = 1200, Stock = 20, CreatedDate = DateTime.UtcNow });
-			await _productWriteRepository.SaveAsync();
-		}
-		[HttpGet("{id}")]
-		public async Task<IActionResult> Get(string id)
-		{
-			Product product=await _productReadRepository.GetByIdAsync(id);
-			return Ok(product);
-		}
+
+
 	}
 }

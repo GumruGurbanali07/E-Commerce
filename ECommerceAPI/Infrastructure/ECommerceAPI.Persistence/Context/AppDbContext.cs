@@ -14,7 +14,7 @@ namespace ECommerceAPI.Persistence.Context
 		public AppDbContext(DbContextOptions options) : base(options)
 		{
 		}
-		public DbSet<Product> Products { get; set; }
+		public DbSet<CeateProductVM> Products { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<Customer> Customers { get; set; }
 

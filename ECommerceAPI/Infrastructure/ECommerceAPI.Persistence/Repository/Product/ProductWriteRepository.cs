@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Persistence.Repository
 {
-	public class ProductWriteRepository : WriteRepository<Product>, IProductWriteRepository
+	public class ProductWriteRepository : WriteRepository<CeateProductVM>, IProductWriteRepository
 	{
 		public ProductWriteRepository(AppDbContext context) : base(context)
 		{
