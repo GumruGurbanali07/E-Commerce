@@ -23,3 +23,7 @@ export class AppComponent {
 }
 }
 
+$.get("https://localhost:7191/api/Product", data=>{
+  console.log(data);
+})
+
