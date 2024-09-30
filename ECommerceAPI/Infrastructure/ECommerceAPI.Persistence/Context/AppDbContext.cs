@@ -14,7 +14,7 @@ namespace ECommerceAPI.Persistence.Context
 		public AppDbContext(DbContextOptions options) : base(options)
 		{
 		}
-		public DbSet<CeateProductVM> Products { get; set; }
+		public DbSet<Product> Products { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<Customer> Customers { get; set; }
 
@@ -27,6 +27,7 @@ namespace ECommerceAPI.Persistence.Context
 				{
 					EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
 					EntityState.Modified => data.Entity.UpdateDate = DateTime.UtcNow,
+					_=>DateTime.UtcNow
 				};
 			}
 			return await base.SaveChangesAsync(cancellationToken);

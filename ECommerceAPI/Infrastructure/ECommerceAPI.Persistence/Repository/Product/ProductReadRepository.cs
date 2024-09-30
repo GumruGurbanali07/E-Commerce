@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Persistence.Repository
 {
-	public class ProductReadRepository : ReadRepository<CeateProductVM>, IProductReadRepository
+	public class ProductReadRepository : ReadRepository<Product>, IProductReadRepository
 	{
 		public ProductReadRepository(AppDbContext context) : base(context)
 		{
