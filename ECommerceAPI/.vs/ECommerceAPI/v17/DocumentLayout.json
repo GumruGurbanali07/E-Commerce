@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38817BA0-66C5-4B54-90EE-DFD8B50D3B1C}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0648C371-C25A-4180-96F0-14FD67ED08AF}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\requestparameters\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0648C371-C25A-4180-96F0-14FD67ED08AF}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\requestparameters\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1078213-22B0-4A96-A59A-AA5CF2A815FE}|Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\infrastructure\\ecommerce.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1078213-22B0-4A96-A59A-AA5CF2A815FE}|Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\ecommerce.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0648C371-C25A-4180-96F0-14FD67ED08AF}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\sheki-s\\desktop\\ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\validator\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +46,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pagination.cs",
+              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\RequestParameters\\Pagination.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\RequestParameters\\Pagination.cs",
+              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\RequestParameters\\Pagination.cs",
+              "RelativeToolTip": "Core\\ECommerceAPI.Application\\RequestParameters\\Pagination.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:43:44.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAA0wFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:20:18.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\Filters\\ValidationFilter.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ECommerce.Infrastructure\\Filters\\ValidationFilter.cs",
+              "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\Filters\\ValidationFilter.cs",
+              "RelativeToolTip": "Infrastructure\\ECommerce.Infrastructure\\Filters\\ValidationFilter.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:02:33.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Program.cs",
               "ToolTip": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Program.cs",
               "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABZAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T18:02:26.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CreateProductValidator.cs",
               "DocumentMoniker": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Validator\\Products\\CreateProductValidator.cs",
               "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Validator\\Products\\CreateProductValidator.cs",
@@ -55,8 +106,7 @@
               "RelativeToolTip": "Core\\ECommerceAPI.Application\\Validator\\Products\\CreateProductValidator.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAcwCEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T17:55:39.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T17:55:39.292Z"
             }
           ]
         }

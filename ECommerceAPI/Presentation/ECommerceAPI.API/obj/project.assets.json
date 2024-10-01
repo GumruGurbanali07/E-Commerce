@@ -1047,6 +1047,19 @@
           "bin/placeholder/ECommerceAPI.Domain.dll": {}
         }
       },
+      "ECommerceAPI.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ECommerceAPI.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommerceAPI.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerceAPI.Infrastructure.dll": {}
+        }
+      },
       "ECommerceAPI.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2884,6 +2897,11 @@
       "path": "../../Core/ECommerceAPI.Domain/ECommerceAPI.Domain.csproj",
       "msbuildProject": "../../Core/ECommerceAPI.Domain/ECommerceAPI.Domain.csproj"
     },
+    "ECommerceAPI.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ECommerce.Infrastructure/ECommerceAPI.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/ECommerce.Infrastructure/ECommerceAPI.Infrastructure.csproj"
+    },
     "ECommerceAPI.Persistence/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/ECommerceAPI.Persistence/ECommerceAPI.Persistence.csproj",
@@ -2893,6 +2911,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ECommerceAPI.Application >= 1.0.0",
+      "ECommerceAPI.Infrastructure >= 1.0.0",
       "ECommerceAPI.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.Extensions.Configuration >= 8.0.0",
@@ -2934,6 +2953,9 @@
           "projectReferences": {
             "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
               "projectPath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
+            },
+            "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj"
             },
             "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
               "projectPath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj"
