@@ -109,3 +109,10 @@ C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\ob
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net8.0\ECommerceAPI.API.pdb
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net8.0\ECommerceAPI.API.genruntimeconfig.cache
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net8.0\ref\ECommerceAPI.API.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\ECommerceAPI.API.staticwebassets.runtime.json
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\ECommerceAPI.Infrastructure.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\ECommerceAPI.Infrastructure.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net8.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cs

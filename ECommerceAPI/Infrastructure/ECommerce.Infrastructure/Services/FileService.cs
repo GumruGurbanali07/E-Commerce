@@ -52,7 +52,7 @@ namespace ECommerceAPI.Infrastructure.Services
 				datas.Add((fileNewName, $"{fileUpload}\\{fileNewName}"));
 				results.Add(result);
 			}
-			if (results.TrueForAll(x => x.Equals(true))) {
+			if (results.TrueForAll(x => x.Equals(true)))	 {
 
 				return datas;
 			}
@@ -60,7 +60,7 @@ namespace ECommerceAPI.Infrastructure.Services
 
 		}
 
-		public Task<string> RenameFileAsync(string path)
+		private Task<string> RenameFileAsync(string path)
 		{
 			throw new NotImplementedException();
 		}
