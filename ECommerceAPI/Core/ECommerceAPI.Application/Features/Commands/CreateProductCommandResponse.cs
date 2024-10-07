@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerceAPI.Domain.Entities
+namespace ECommerceAPI.Application.Features.Commands
 {
-	public class InvoiceFile:File
+	public class CreateProductCommandResponse
 	{
-		public decimal Price { get; set; }
 	}
 }

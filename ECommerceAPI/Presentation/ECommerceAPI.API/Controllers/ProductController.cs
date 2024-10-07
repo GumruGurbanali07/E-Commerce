@@ -7,6 +7,9 @@ using System.Net;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Application.RequestParameters;
 using ECommerceAPI.Application.Services;
+using ECommerceAPI.Application.Features.Queries;
+using MediatR;
+using ECommerceAPI.Application.Features.Commands;
 
 namespace ECommerceAPI.API.Controllers
 {
@@ -17,46 +20,26 @@ namespace ECommerceAPI.API.Controllers
 		private readonly IProductReadRepository _productReadRepository;
 		private readonly IProductWriteRepository _productWriteRepository;
 		private readonly IWebHostEnvironment _webHostEnvironment;
-		private readonly IFileService _fileService;
-		public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IWebHostEnvironment webHostEnvironment,IFileService fileService)
+		private readonly IMediator _mediator;
+
+		public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IWebHostEnvironment webHostEnvironment, IMediator mediator)
 		{
 			_productWriteRepository = productWriteRepository;
 			_productReadRepository = productReadRepository;
 			_webHostEnvironment = webHostEnvironment;
-			_fileService = fileService;
+			_mediator = mediator;
 		}
 		[HttpGet]
-		public async Task<IActionResult> Get([FromQuery] Pagination pagination)
+		public async Task<IActionResult> Get([FromQuery] GetAllProductRequest request)
 		{
-			var totalCount = _productReadRepository.GetAll(false).Count();
-			var products = _productReadRepository.GetAll(false).Select(x => new
-			{
-				x.Id,
-				x.Name,
-				x.Price,
-				x.Stock,
-				x.CreatedDate,
-				x.UpdateDate,
-			}).Skip(pagination.Page * pagination.Size).Take(pagination.Size).ToList();
-
-			return Ok(new
-			{
-				products,
-				totalCount
-			});
+			GetAllProductResponse response=await _mediator.Send(request);
+			return Ok(response);
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Post(CreateProductVM productVM)
+		public async Task<IActionResult> Post(CreateProductCommandRequest request)
 		{
-
-			await _productWriteRepository.AddAsync(new()
-			{
-				Name = productVM.Name,
-				Price = productVM.Price,
-				Stock = productVM.Stock,
-			});
-			await _productWriteRepository.SaveAsync();
+			CreateProductCommandResponse response =await _mediator.Send(request);			
 			return StatusCode((int)HttpStatusCode.Created);
 		}
 
@@ -78,12 +61,6 @@ namespace ECommerceAPI.API.Controllers
 			return Ok();
 		}
 
-		[HttpPost("[action]")]
-		public async Task<IActionResult> Upload()
-		{
-			await _fileService.FileUploadAsync("resource/product-images",Request.Form.Files);
-			return Ok();
-		}
 
 	}
 }
