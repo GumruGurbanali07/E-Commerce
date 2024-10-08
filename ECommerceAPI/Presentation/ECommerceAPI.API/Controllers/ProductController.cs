@@ -20,16 +20,12 @@ namespace ECommerceAPI.API.Controllers
 	[ApiController]
 	public class ProductController : ControllerBase
 	{
-		private readonly IProductReadRepository _productReadRepository;
-		private readonly IProductWriteRepository _productWriteRepository;
-		private readonly IWebHostEnvironment _webHostEnvironment;
+		
 		private readonly IMediator _mediator;
 
-		public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IWebHostEnvironment webHostEnvironment, IMediator mediator)
+		public ProductController( IMediator mediator)
 		{
-			_productWriteRepository = productWriteRepository;
-			_productReadRepository = productReadRepository;
-			_webHostEnvironment = webHostEnvironment;
+			
 			_mediator = mediator;
 		}
 		[HttpGet]

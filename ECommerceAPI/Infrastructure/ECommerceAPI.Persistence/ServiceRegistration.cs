@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ECommerceAPI.Application.Repository;
 using ECommerceAPI.Persistence.Repository;
+using ECommerceAPI.Domain.Entities.Identity;
 
 namespace ECommerceAPI.Persistence
 {
@@ -17,6 +18,7 @@ namespace ECommerceAPI.Persistence
 		public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
 		{
 			services.AddDbContext<AppDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("PostgreSQL")));
+			services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbContext>();
 			services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
 			services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 			services.AddScoped<IProductReadRepository, ProductReadRepository>();
