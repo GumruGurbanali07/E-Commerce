@@ -13,7 +13,7 @@ builder.Services.AddApplicationService();
 
 //builder.Services.AddCors(options=>options.AddDefaultPolicy(policy =>policy.WithOrigins("http://localhost:7191", "https://localhost:7191").AllowAnyHeader().AllowAnyMethod()));
 
-builder.Services.AddControllers(options=>options.Filters.Add<ValidationFilter>())
+builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
 	.AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
 	.ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
 
