@@ -25,7 +25,7 @@ namespace ECommerceAPI.Infrastructure.Services.Token
 			Application.DTOs.Token token = new();
 			SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
 			SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256);
-			token.Expiration = DateTime.UtcNow.AddMinutes(5);
+			token.Expiration = DateTime.UtcNow.AddMinutes(20);
 			JwtSecurityToken securityToken = new(
 				audience: _configuration["Token:Audience"],
 				issuer: _configuration["Token:Issures"],

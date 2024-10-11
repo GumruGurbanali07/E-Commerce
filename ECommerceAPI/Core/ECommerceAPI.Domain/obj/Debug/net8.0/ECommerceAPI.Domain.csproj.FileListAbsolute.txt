@@ -10,3 +10,4 @@ C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Deb
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net8.0\refint\ECommerceAPI.Domain.dll
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net8.0\ECommerceAPI.Domain.pdb
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net8.0\ref\ECommerceAPI.Domain.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net8.0\ECommerceAPI.Domain.csproj.AssemblyReference.cache

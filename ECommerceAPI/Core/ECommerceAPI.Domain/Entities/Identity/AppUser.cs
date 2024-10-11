@@ -10,6 +10,10 @@ namespace ECommerceAPI.Domain.Entities.Identity
 {
 	public class AppUser :IdentityUser<string>
 	{
+		public AppUser()
+		{
+			Id = Guid.NewGuid().ToString(); 
+		}
 		public string Name { get; set; }
 	}
 }
