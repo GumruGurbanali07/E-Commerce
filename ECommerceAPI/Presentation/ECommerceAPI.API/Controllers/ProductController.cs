@@ -13,11 +13,13 @@ using ECommerceAPI.Application.Features.Queries.Product.GetAllProduct;
 using ECommerceAPI.Application.Features.Queries.Product.GetProductById;
 using ECommerceAPI.Application.Features.Commands.Product.UpdateProduct;
 using ECommerceAPI.Application.Features.Commands.Product.RemoveProduct;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerceAPI.API.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
+	[Authorize(AuthenticationSchemes ="Admin")]
 	public class ProductController : ControllerBase
 	{
 		
