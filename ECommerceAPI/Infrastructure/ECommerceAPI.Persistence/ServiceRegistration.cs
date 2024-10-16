@@ -28,6 +28,7 @@ namespace ECommerceAPI.Persistence
 			services.AddScoped<IOrderReadRepository, OrderReadRepository>();
 			services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
 			services.AddScoped<IUserService, UserService>();
+			services.AddScoped<IAuthService, AuthService>();
 
 
 
