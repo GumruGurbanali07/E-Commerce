@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "7bUAqtCYBkM=",
+  "dgSpecHash": "pb44ROwKy1c=",
   "success": true,
   "projectFilePath": "C:\\Users\\Sheki-S\\Desktop\\ECommerce\\ECommerceAPI\\Infrastructure\\ECommerce.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.10.0\\fluentvalidation.dependencyinjectionextensions.11.10.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
@@ -35,7 +38,10 @@
     "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
-    "C:\\Users\\Sheki-S\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512"
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

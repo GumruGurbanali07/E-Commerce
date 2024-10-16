@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using ECommerceAPI.Application.Repository;
 using ECommerceAPI.Persistence.Repository;
 using ECommerceAPI.Domain.Entities.Identity;
+using ECommerceAPI.Application.Abstraction.Services;
+using ECommerceAPI.Persistence.Services;
 
 namespace ECommerceAPI.Persistence
 {
@@ -25,6 +27,7 @@ namespace ECommerceAPI.Persistence
 			services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 			services.AddScoped<IOrderReadRepository, OrderReadRepository>();
 			services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+			services.AddScoped<IUserService, UserService>();
 
 
 
