@@ -10,5 +10,6 @@ namespace ECommerceAPI.Application.Abstraction.Token
 	public interface ITokenHandler
 	{
 		P.Token CreateAccessToken(int minute);
+		string CreateRefreshToken(int minute);	
 	}
 }

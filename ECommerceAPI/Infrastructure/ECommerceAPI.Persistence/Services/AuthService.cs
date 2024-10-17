@@ -19,12 +19,13 @@ namespace ECommerceAPI.Persistence.Services
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
 		private	readonly ITokenHandler _tokenHandler;
-
-		public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler)
+		private readonly IUserService _userService;
+		public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler, IUserService userService)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
 			_tokenHandler = tokenHandler;
+			_userService = userService;
 		}
 
 		public async Task<Token> LoginAsync(string UsernameOrEmail, string password, int tokeLifeTime)
@@ -43,8 +44,10 @@ namespace ECommerceAPI.Persistence.Services
 			if (result.Succeeded)
 			{
 				Token token = _tokenHandler.CreateAccessToken(tokeLifeTime);
+				await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 5);
 				return token;
 			}
+			else
 			throw new UserNotFoundException("User can not found");
 		}
 	}

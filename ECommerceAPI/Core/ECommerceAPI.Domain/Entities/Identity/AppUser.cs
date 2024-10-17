@@ -15,5 +15,7 @@ namespace ECommerceAPI.Domain.Entities.Identity
 			Id = Guid.NewGuid().ToString(); 
 		}
 		public string Name { get; set; }
+		public string? RefreshToken { get; set; }
+		public DateTime? RefreshTokenEndDate { get; set; }
 	}
 }
