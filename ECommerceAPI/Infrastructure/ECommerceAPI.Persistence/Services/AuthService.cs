@@ -5,6 +5,7 @@ using ECommerceAPI.Application.Exceptions;
 using ECommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,6 +50,20 @@ namespace ECommerceAPI.Persistence.Services
 			}
 			else
 			throw new UserNotFoundException("User can not found");
+		}
+
+		public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
+		{
+		  AppUser? user=await _userManager.Users.FirstOrDefaultAsync(x=>x.RefreshToken == refreshToken);
+			if(user!=null && user?.RefreshTokenEndDate > DateTime.UtcNow)
+			{
+				Token token = _tokenHandler.CreateAccessToken(5);
+				await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 5);
+				return token;
+			}
+			else
+				throw new UserNotFoundException("not found");
+
 		}
 	}
 }

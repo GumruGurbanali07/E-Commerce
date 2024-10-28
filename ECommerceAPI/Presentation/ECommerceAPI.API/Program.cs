@@ -6,6 +6,8 @@ using ECommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using Serilog.Core;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,15 @@ builder.Services.AddApplicationService();
 
 
 //builder.Services.AddCors(options=>options.AddDefaultPolicy(policy =>policy.WithOrigins("http://localhost:7191", "https://localhost:7191").AllowAnyHeader().AllowAnyMethod()));
+
+Logger log = new LoggerConfiguration()
+	.WriteTo.Console()
+	.WriteTo.File("logs/log.txt")
+	.WriteTo.PostgreSQL(builder.Configuration.GetConnectionString("PostgreSQL"),"logs", needAutoCreateTable:true)	
+	.CreateLogger();
+builder.Host.UseSerilog(log);
+
+
 
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
 	.AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())

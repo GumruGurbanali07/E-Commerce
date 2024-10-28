@@ -46,14 +46,18 @@ namespace ECommerceAPI.Persistence.Services
 
 		public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accessTokenDate, int refreshTokenLifeTime)
 		{
-			
-			if (user != null)
+
+			if (user == null)
 			{
-				user.RefreshToken= refreshToken;
-				user.RefreshTokenEndDate=accessTokenDate.AddMinutes(refreshTokenLifeTime);
+				throw new UserNotFoundException("user not found");
+			}
+			else
+			{
+				user.RefreshToken = refreshToken;
+				user.RefreshTokenEndDate = accessTokenDate.AddMinutes(refreshTokenLifeTime);
 				await _userManager.UpdateAsync(user);
 			}
-			throw new UserNotFoundException("user not found");
+
 		}
 	}
 }
