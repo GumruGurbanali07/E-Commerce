@@ -1,0 +1,40 @@
+2024-10-28 21:40:30.377 +04:00 [INF] User profile is available. Using 'C:\Users\Sheki-S\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-28 21:40:30.768 +04:00 [INF] Now listening on: https://localhost:7191
+2024-10-28 21:40:30.774 +04:00 [INF] Now listening on: http://localhost:5125
+2024-10-28 21:40:30.779 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-28 21:40:30.782 +04:00 [INF] Hosting environment: Development
+2024-10-28 21:40:30.784 +04:00 [INF] Content root path: C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-10-28 21:40:32.026 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.html - null null
+2024-10-28 21:40:32.406 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.html - 200 null text/html;charset=utf-8 380.3173ms
+2024-10-28 21:40:32.435 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-28 21:40:32.435 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_vs/browserLink - null null
+2024-10-28 21:40:32.453 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 17.9701ms
+2024-10-28 21:40:32.547 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.441ms
+2024-10-28 21:40:32.693 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - null null
+2024-10-28 21:40:32.848 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.7747ms
+2024-10-29 09:55:39.815 +04:00 [INF] User profile is available. Using 'C:\Users\Sheki-S\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-29 09:55:40.065 +04:00 [INF] Now listening on: https://localhost:7191
+2024-10-29 09:55:40.067 +04:00 [INF] Now listening on: http://localhost:5125
+2024-10-29 09:55:40.070 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-29 09:55:40.071 +04:00 [INF] Hosting environment: Development
+2024-10-29 09:55:40.072 +04:00 [INF] Content root path: C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-10-29 09:55:40.834 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.html - null null
+2024-10-29 09:55:41.196 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.html - 200 null text/html;charset=utf-8 364.7465ms
+2024-10-29 09:55:41.226 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-29 09:55:41.227 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_vs/browserLink - null null
+2024-10-29 09:55:41.240 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 13.6416ms
+2024-10-29 09:55:41.310 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.4857ms
+2024-10-29 09:55:41.481 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - null null
+2024-10-29 09:55:41.678 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.9355ms
+2024-10-29 09:55:54.643 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/api/Product?Page=10&Size=5 - null null
+2024-10-29 09:55:54.681 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-10-29 09:55:54.705 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-29 09:55:54.714 +04:00 [INF] AuthenticationScheme: Admin was challenged.
+2024-10-29 09:55:54.719 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/api/Product?Page=10&Size=5 - 401 0 null 75.6123ms
+2024-10-29 09:56:09.209 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7191/api/Product/1 - null null
+2024-10-29 09:56:09.223 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-10-29 09:56:09.231 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-29 09:56:09.235 +04:00 [INF] AuthenticationScheme: Admin was challenged.
+2024-10-29 09:56:09.238 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/api/Product/1 - 401 0 null 28.7558ms

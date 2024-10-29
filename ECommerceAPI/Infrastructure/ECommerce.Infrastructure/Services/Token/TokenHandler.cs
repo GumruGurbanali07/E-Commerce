@@ -1,11 +1,12 @@
 ﻿using ECommerceAPI.Application.Abstraction.Token;
-
+using ECommerceAPI.Domain.Entities.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace ECommerceAPI.Infrastructure.Services.Token
 			_configuration = configuration;
 		}
 
-		public Application.DTOs.Token CreateAccessToken(int minute)
+		public Application.DTOs.Token CreateAccessToken(int minute, AppUser user)
 		{
 			Application.DTOs.Token token = new();
 			SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
@@ -32,7 +33,9 @@ namespace ECommerceAPI.Infrastructure.Services.Token
 				issuer: _configuration["Token:Issures"],
 				expires:token.Expiration,
 				notBefore:DateTime.UtcNow,
-				signingCredentials:signingCredentials);
+				signingCredentials:signingCredentials,
+				claims:new List<Claim> { new (ClaimTypes.Name,user.UserName)}
+				);
 
 			JwtSecurityTokenHandler tokenHandler = new();
 			token.AccessToken=tokenHandler.WriteToken(securityToken);
