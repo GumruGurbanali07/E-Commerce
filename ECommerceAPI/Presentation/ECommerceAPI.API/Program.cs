@@ -15,12 +15,14 @@ using Serilog.Core;
 using Serilog.Sinks.PostgreSQL;
 using System.Security.Claims;
 using System.Text;
+using ECommerceAPI.SiganlR;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationService();
+builder.Services.AddSignalRServices();
 
 
 //builder.Services.AddCors(options=>options.AddDefaultPolicy(policy =>policy.WithOrigins("http://localhost:7191", "https://localhost:7191").AllowAnyHeader().AllowAnyMethod()));
@@ -116,5 +118,7 @@ app.Use(async (context, next) =>
 
 
 app.MapControllers();
+
+app.MapHubs();
 
 app.Run();
