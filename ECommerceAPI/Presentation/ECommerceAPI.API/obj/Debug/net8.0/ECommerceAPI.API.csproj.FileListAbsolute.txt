@@ -149,3 +149,6 @@ C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bi
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\Serilog.Sinks.PostgreSQL.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\ECommerceAPI.SiganlR.dll
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net8.0\ECommerceAPI.SiganlR.pdb
+C:\Users\Sheki-S\Desktop\ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net8.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cs

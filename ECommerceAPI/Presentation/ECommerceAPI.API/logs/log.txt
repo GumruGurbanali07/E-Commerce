@@ -38,3 +38,63 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-10-29 09:56:09.235 +04:00 [INF] AuthenticationScheme: Admin was challenged.
 2024-10-29 09:56:09.238 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7191/api/Product/1 - 401 0 null 28.7558ms
+2024-10-30 11:20:21.757 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-10-30 11:20:21.838 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-10-30 11:20:21.992 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-10-30 11:20:22.026 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-10-30 11:20:22.027 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-10-30 11:20:22.041 +04:00 [INF] Applying migration '20241030071957_BasketItem'.
+2024-10-30 11:20:22.186 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Baskets" (
+    "Id" uuid NOT NULL,
+    "UserId" text NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdateDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Baskets" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Baskets_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2024-10-30 11:20:22.191 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "BasketItems" (
+    "Id" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "BasketId" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdateDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_BasketItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_BasketItems_Baskets_BasketId" FOREIGN KEY ("BasketId") REFERENCES "Baskets" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_BasketItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id") ON DELETE CASCADE
+);
+2024-10-30 11:20:22.194 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_BasketItems_BasketId" ON "BasketItems" ("BasketId");
+2024-10-30 11:20:22.196 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_BasketItems_ProductId" ON "BasketItems" ("ProductId");
+2024-10-30 11:20:22.198 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Baskets_UserId" ON "Baskets" ("UserId");
+2024-10-30 11:20:22.200 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20241030071957_BasketItem', '8.0.8');

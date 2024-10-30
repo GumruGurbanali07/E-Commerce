@@ -11,6 +11,7 @@
           "ECommerceAPI.Application": "1.0.0",
           "ECommerceAPI.Infrastructure": "1.0.0",
           "ECommerceAPI.Persistence": "1.0.0",
+          "ECommerceAPI.SiganlR": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "8.0.8",
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -1144,6 +1145,14 @@
         "runtime": {
           "ECommerceAPI.Persistence.dll": {}
         }
+      },
+      "ECommerceAPI.SiganlR/1.0.0": {
+        "dependencies": {
+          "ECommerceAPI.Application": "1.0.0"
+        },
+        "runtime": {
+          "ECommerceAPI.SiganlR.dll": {}
+        }
       }
     }
   },
@@ -1883,6 +1892,11 @@
       "sha512": ""
     },
     "ECommerceAPI.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommerceAPI.SiganlR/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

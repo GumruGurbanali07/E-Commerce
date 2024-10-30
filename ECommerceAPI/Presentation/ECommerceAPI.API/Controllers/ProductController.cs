@@ -19,7 +19,7 @@ namespace ECommerceAPI.API.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	[Authorize(AuthenticationSchemes ="Admin")]
+	
 	public class ProductController : ControllerBase
 	{
 		
@@ -44,6 +44,7 @@ namespace ECommerceAPI.API.Controllers
 		}
 
 		[HttpPost]
+		[Authorize(AuthenticationSchemes = "Admin")]
 		public async Task<IActionResult> Post(CreateProductCommandRequest request)
 		{
 			CreateProductCommandResponse response =await _mediator.Send(request);			
@@ -51,12 +52,14 @@ namespace ECommerceAPI.API.Controllers
 		}
 
 		[HttpPut]
+		[Authorize(AuthenticationSchemes = "Admin")]
 		public async Task<IActionResult> Put([FromBody]UpdateProductCommandRequest request)
 		{
 			UpdateProductCommandResponse response=await _mediator.Send(request);
 			return Ok(response);
 		}
 		[HttpDelete("{id}")]
+		[Authorize(AuthenticationSchemes = "Admin")]
 		public async Task<IActionResult> Delete([FromRoute] RemoveProductCommandRequest request)
 		{
 			RemoveProductCommandResponse response=await _mediator.Send(request);
