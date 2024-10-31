@@ -18,7 +18,7 @@ using System.Text;
 using ECommerceAPI.SiganlR;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationService();
