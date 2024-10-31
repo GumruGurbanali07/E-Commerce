@@ -22,6 +22,18 @@ namespace ECommerceAPI.Persistence.Context
 		public DbSet<Basket> Baskets { get; set; }
 		public DbSet<BasketItem> BasketItems { get; set; }
 	
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<Order>()
+				.HasKey(x => x.Id);
+			modelBuilder.Entity<Basket>()
+			.HasOne(x => x.Order)
+			.WithOne(y => y.Basket)
+			.HasForeignKey<Order>(x => x.Id);//hem foreign hemde primary key olacaq
+
+
+			base.OnModelCreating(modelBuilder);//identity teleb edir
+		}
 		public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
 		{
 			var datas = ChangeTracker.Entries<BaseEntity>();

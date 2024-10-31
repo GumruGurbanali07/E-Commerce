@@ -199,7 +199,6 @@ namespace ECommerceAPI.Persistence.Migrations
             modelBuilder.Entity("ECommerceAPI.Domain.Entities.Order", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<string>("Address")
@@ -412,6 +411,14 @@ namespace ECommerceAPI.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("ECommerceAPI.Domain.Entities.Basket", "Basket")
+                        .WithOne("Order")
+                        .HasForeignKey("ECommerceAPI.Domain.Entities.Order", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Basket");
+
                     b.Navigation("Customer");
                 });
 
@@ -484,6 +491,9 @@ namespace ECommerceAPI.Persistence.Migrations
             modelBuilder.Entity("ECommerceAPI.Domain.Entities.Basket", b =>
                 {
                     b.Navigation("BasketItems");
+
+                    b.Navigation("Order")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ECommerceAPI.Domain.Entities.Customer", b =>

@@ -13,5 +13,7 @@ namespace ECommerceAPI.Domain.Entities
 		public string UserId { get; set; } //IdentityUser<string>
 		public AppUser User { get; set; }
 		public ICollection<BasketItem> BasketItems { get; set; }
+		//ehtiyac yoxdur
+		public Order Order { get; set; }
 	}
 }
