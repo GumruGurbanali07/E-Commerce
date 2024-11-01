@@ -83,25 +83,76 @@ namespace ECommerceAPI.Persistence.Services
 		}
 		public async Task AddItemToBasketAsync(CreateBasketItemVM basketItem)
 		{
+			//ContextUser metodu çağırılaraq mövcud istifadəçinin səbət obyektini (Basket) alır. Əgər səbət varsa, onun məlumatı basket adlı dəyişəndə saxlanır.
 			Basket? basket = await ContextUser();
-			if (basket!=null){
-				BasketItem _basketItem = await _basketItemReadRepository.GetSingleAsync(x => x.BasketId == basket.Id && x.ProductId = Guid.Parse(basketItem.ProductId)); 
+			//Burada yoxlanılır ki, basket boş (null) deyil. Yəni istifadəçinin səbəti mövcuddursa, növbəti addımlara davam edir.
+			if (basket != null)
+			{
+				//Bu sətirdə _basketItemReadRepository adlı oxuma deposundan (repository) istifadə edərək səbətdə bu məhsulun olub-olmadığı yoxlanılır. Burada iki şərt yoxlanır:
+				//BasketId səbətin Id - si ilə eyni olmalıdır.
+				//ProductId, səbətə əlavə edilmək istənilən məhsulun ProductId-si ilə uyğun olmalıdır(string tipindən Guid.Parse ilə Guid tipinə çevrilir).
+				//Əgər məhsul səbətdə varsa, GetSingleAsync metodu həmin səbət maddəsini(BasketItem) _basketItem adlı dəyişəndə saxlayır.
+				BasketItem _basketItem = await _basketItemReadRepository.GetSingleAsync(x => x.BasketId == basket.Id && x.ProductId == Guid.Parse(basketItem.ProductId));
+				if (basketItem != null)
+				{
+					//Əgər məhsul artıq səbətdə varsa, sadəcə olaraq həmin məhsulun miqdarı (Quantity) 1 vahid artırılır.
+					_basketItem.Quantity++;
+
+				}
+				//Əgər məhsul səbətdə yoxdursa, _basketItemWriteRepository adlı yazma deposundan istifadə edilərək yeni bir BasketItem obyekt yaradılır və səbətə əlavə edilir. Bu yeni obyektin:
+				//BasketId(səbət ID) mövcud səbətin ID - si olur,
+				//ProductId(məhsul ID) basketItem.ProductId - dən çevrilərək(Guid.Parse) təyin olunur,
+				//Quantity isə istifadəçi tərəfindən göndərilən basketItem.Quantity olur.
+				else
+				{
+					await _basketItemWriteRepository.AddAsync(new()
+					{
+						BasketId = basket.Id,
+						ProductId = Guid.Parse(basketItem.ProductId),
+						Quantity = basketItem.Quantity
+					});
+				}
+				await _basketWriteRepository.SaveAsync();
 			}
 		}
 
-		public Task<List<BasketItem>> GetBasketItemAsync()
+		public async Task<List<BasketItem>> GetBasketItemAsync()
 		{
-			throw new NotImplementedException();
+			Basket? basket = await ContextUser();
+			Basket? result = await _basketReadRepository.GetAll()
+				.Include(b => b.BasketItems)
+				.ThenInclude(p => p.Product)
+				.FirstOrDefaultAsync(b => b.Id == basket.Id);
+
+			return result.BasketItems.ToList();
 		}
 
-		public Task RemoveBasketItemAsync(string basketId)
+		public async Task RemoveBasketItemAsync(string basketItemId)
 		{
-			throw new NotImplementedException();
+			BasketItem? basketItem = await _basketItemReadRepository.GetByIdAsync(basketItemId);
+			if (basketItem != null)
+			{
+				_basketItemWriteRepository.Remove(basketItem);
+				await _basketWriteRepository.SaveAsync();
+			}
 		}
 
-		public Task UpdateQuantityAsync(UpdateBasketItemVM updateBasketItem)
+		public async Task UpdateQuantityAsync(UpdateBasketItemVM basketItem)
 		{
-			throw new NotImplementedException();
+			BasketItem? _basketItem = await _basketItemReadRepository.GetByIdAsync(basketItem.BasketItemId);
+			if (_basketItem != null)
+			{
+				_basketItem.Quantity = basketItem.Quantity;
+				await _basketWriteRepository.SaveAsync();
+			}
+		}
+		public Basket? GetUserActiveBasket
+		{
+			get
+			{
+				Basket? basket = ContextUser().Result;
+				return basket;
+			}
 		}
 	}
 }
