@@ -9,5 +9,6 @@ namespace ECommerceAPI.SiganlR
 	public class ReceiveFunctionsName
 	{
 		public const string ProductAddedMessage = "receiveProductAddedMessage";
+		public const string OrderAddedMessage = "receiveOrderAddedMessage";
 	}
 }

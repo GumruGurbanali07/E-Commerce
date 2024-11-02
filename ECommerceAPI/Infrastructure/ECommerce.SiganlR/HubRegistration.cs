@@ -14,6 +14,7 @@ namespace ECommerceAPI.SiganlR
 		public static void MapHubs(this WebApplication webApplication)
 		{
 			webApplication.MapHub<ProductHub>("/product-hub");
+			webApplication.MapHub<OrderHub>("/order-hub");
 		}
 	}
 }
