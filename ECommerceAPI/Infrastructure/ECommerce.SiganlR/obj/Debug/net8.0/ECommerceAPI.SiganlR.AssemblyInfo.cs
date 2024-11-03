@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECommerceAPI.SiganlR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4eee9cbe8484572e676e3473d5482f193bef3f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22c2aabfa0821921f70b9cffb8f63e45094ed3ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECommerceAPI.SiganlR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECommerceAPI.SiganlR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

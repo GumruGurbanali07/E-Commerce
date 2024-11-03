@@ -1,6 +1,7 @@
 ﻿using ECommerceAPI.Application.Abstraction.Services;
 using ECommerceAPI.Application.DTOs.Order;
 using ECommerceAPI.Application.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,14 +30,42 @@ namespace ECommerceAPI.Persistence.Services
 				Address = createOrder.Address,
 				Id = Guid.Parse(createOrder.BasketId),
 				Description = createOrder.Description,
-				OrderCode=orderCode,
+				OrderCode = orderCode,
 			});
 			await _orderWriteRepository.SaveAsync();
 		}
 
-		public Task<ListOrder> GetAllOrdersAsync()
+		public async Task<ListOrder> GetAllOrdersAsync(int page, int size)
 		{
-			
+			var query = _orderReadRepository.GetAll().Include(x => x.Basket)
+				.ThenInclude(y => y.User)
+				.Include(x => x.Basket)
+				.ThenInclude(i => i.BasketItems)
+				.ThenInclude(p => p.Product);
+
+			var data = query.Skip(page * size).Take(size);
+
+			return new()
+			{
+				TotalOrderCount = await query.CountAsync(),
+				Orders = await data.Select(l => new
+				{
+					CreatedDate = l.CreatedDate,
+					OrderCode = l.OrderCode,
+					TotalPrice = l.Basket.BasketItems.Sum(s => s.Product.Price * s.Quantity),
+					Username = l.Basket.User.UserName
+				}).ToListAsync()
+			};
+
+			//.Select(l => new ListOrder
+			//{
+			//	CreatedDate = l.CreatedDate,
+			//	OrderCode = l.OrderCode,
+			//	TotalPrice = l.Basket.BasketItems.Sum(s => s.Product.Price * s.Quantity),
+			//	Username = l.Basket.User.UserName
+			//}).Skip(page*size).Take(size).ToListAsync();
+
+
 		}
 	}
 }
