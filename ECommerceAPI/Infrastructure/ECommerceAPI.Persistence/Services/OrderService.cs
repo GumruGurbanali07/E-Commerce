@@ -12,10 +12,12 @@ namespace ECommerceAPI.Persistence.Services
 	public class OrderService : IOrderService
 	{
 		private readonly IOrderWriteRepository _orderWriteRepository;
+		private readonly IOrderReadRepository _orderReadRepository;
 
-		public OrderService(IOrderWriteRepository orderWriteRepository)
+		public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository)
 		{
 			_orderWriteRepository = orderWriteRepository;
+			_orderReadRepository = orderReadRepository;
 		}
 
 		public async Task CreateOrderAsync(CreateOrder createOrder)
@@ -30,6 +32,11 @@ namespace ECommerceAPI.Persistence.Services
 				OrderCode=orderCode,
 			});
 			await _orderWriteRepository.SaveAsync();
+		}
+
+		public Task<ListOrder> GetAllOrdersAsync()
+		{
+			
 		}
 	}
 }
