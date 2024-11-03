@@ -18,13 +18,16 @@ namespace ECommerceAPI.Persistence.Services
 			_orderWriteRepository = orderWriteRepository;
 		}
 
-		public async Task CreateOrder(CreateOrder createOrder)
+		public async Task CreateOrderAsync(CreateOrder createOrder)
 		{
+			var orderCode = (new Random().NextDouble() * 10000).ToString();
+			orderCode = orderCode.Substring(orderCode.IndexOf(".") + 1, orderCode.Length - orderCode.IndexOf(".") - 1);
 			await _orderWriteRepository.AddAsync(new()
 			{
 				Address = createOrder.Address,
-				BasketId = Guid.Parse(createOrder.BasketId),
+				Id = Guid.Parse(createOrder.BasketId),
 				Description = createOrder.Description,
+				OrderCode=orderCode,
 			});
 			await _orderWriteRepository.SaveAsync();
 		}

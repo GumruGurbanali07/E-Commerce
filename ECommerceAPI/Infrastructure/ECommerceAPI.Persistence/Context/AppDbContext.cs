@@ -26,6 +26,11 @@ namespace ECommerceAPI.Persistence.Context
 		{
 			modelBuilder.Entity<Order>()
 				.HasKey(x => x.Id);
+
+			modelBuilder.Entity<Order>()
+				.HasIndex(x => x.OrderCode)
+				.IsUnique(); // ordercode unikaldir 
+
 			modelBuilder.Entity<Basket>()
 			.HasOne(x => x.Order)
 			.WithOne(y => y.Basket)
