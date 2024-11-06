@@ -50,6 +50,7 @@ namespace ECommerceAPI.Persistence.Services
 				TotalOrderCount = await query.CountAsync(),
 				Orders = await data.Select(l => new
 				{
+					Id=l.Id,
 					CreatedDate = l.CreatedDate,
 					OrderCode = l.OrderCode,
 					TotalPrice = l.Basket.BasketItems.Sum(s => s.Product.Price * s.Quantity),
