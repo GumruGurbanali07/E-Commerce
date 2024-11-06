@@ -1,6 +1,7 @@
 ﻿using ECommerceAPI.Application.Abstraction.Services;
 using ECommerceAPI.Application.DTOs.Order;
 using ECommerceAPI.Application.Repository;
+using ECommerceAPI.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -50,7 +51,7 @@ namespace ECommerceAPI.Persistence.Services
 				TotalOrderCount = await query.CountAsync(),
 				Orders = await data.Select(l => new
 				{
-					Id=l.Id,
+					Id = l.Id,
 					CreatedDate = l.CreatedDate,
 					OrderCode = l.OrderCode,
 					TotalPrice = l.Basket.BasketItems.Sum(s => s.Product.Price * s.Quantity),
@@ -67,6 +68,31 @@ namespace ECommerceAPI.Persistence.Services
 			//}).Skip(page*size).Take(size).ToListAsync();
 
 
+		}
+
+		public async Task<SingleOrder> GetOrderByIdAsync(string id)
+		{
+			var data = await _orderReadRepository.GetAll()
+					.Include(x => x.Basket)
+					.ThenInclude(y => y.BasketItems)
+					.ThenInclude(z => z.Product)
+					.FirstOrDefaultAsync(j => j.Id == Guid.Parse(id));
+
+			return new()
+			{
+				Id = data.Id.ToString(),
+				BasketItem = data.Basket.BasketItems.Select(x => new
+				{
+					x.Product.Name,
+					x.Product.Price,
+					x.Quantity
+				}),
+				Address = data.Address,
+				CreatedDate = data.CreatedDate,
+				OrderCode = data.OrderCode,
+				Description = data.Description,
+
+			};
 		}
 	}
 }

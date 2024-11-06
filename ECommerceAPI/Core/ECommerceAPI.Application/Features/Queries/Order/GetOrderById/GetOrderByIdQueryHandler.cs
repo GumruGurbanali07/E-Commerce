@@ -18,9 +18,19 @@ namespace ECommerceAPI.Application.Features.Queries.Order.GetOrderById
 			_orderService = orderService;
 		}
 
-		public Task<GetOrderByIdQueryResponse> Handle(GetOrderByIdQueryRequest request, CancellationToken cancellationToken)
+		public async  Task<GetOrderByIdQueryResponse> Handle(GetOrderByIdQueryRequest request, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException();
+			var data = await _orderService.GetOrderByIdAsync(request.Id);
+			return new()
+			{
+				Id = data.Id,
+				OrderCode = data.OrderCode,
+				Address = data.Address,
+				BasketItem = data.BasketItem,
+				CreatedDate = data.CreatedDate,
+				Description = data.Description,
+				Completed = data.Completed
+			};
 		}
 	}
 }

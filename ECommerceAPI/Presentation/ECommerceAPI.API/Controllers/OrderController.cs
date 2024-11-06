@@ -1,4 +1,6 @@
 ﻿using ECommerceAPI.Application.Features.Commands.Order.CreateOrder;
+using ECommerceAPI.Application.Features.Queries.Order.GetAllOrders;
+using ECommerceAPI.Application.Features.Queries.Order.GetOrderById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -17,22 +19,22 @@ namespace ECommerceAPI.API.Controllers
 			_mediator = mediator;
 		}
 
-		//[HttpGet("{Id}")]
-		////[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Orders, ActionType = ActionType.Reading, Definition = "Get Order By Id")]
-		//public async Task<ActionResult> GetOrderById([FromRoute] GetOrderByIdQueryRequest getOrderByIdQueryRequest)
-		//{
-		//	GetOrderByIdQueryResponse response = await _mediator.Send(getOrderByIdQueryRequest);
-		//	return Ok(response);
-		//}
+		[HttpGet("{Id}")]
+		//[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Orders, ActionType = ActionType.Reading, Definition = "Get Order By Id")]
+		public async Task<ActionResult> GetOrderById([FromRoute] GetOrderByIdQueryRequest getOrderByIdQueryRequest)
+		{
+			GetOrderByIdQueryResponse response = await _mediator.Send(getOrderByIdQueryRequest);
+			return Ok(response);
+		}
 
-		//[HttpGet]
+		[HttpGet]
 		//[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Orders, ActionType = ActionType.Reading, Definition = "Get All Orders")]
-		//public async Task<ActionResult> GetAllOrders([FromQuery] GetAllOrdersQueryRequest getAllOrdersQueryRequest)
-		//{
-		//	GetAllOrdersQueryResponse response = await _mediator.Send(getAllOrdersQueryRequest);
-		//	return Ok(response);
-		//}
-
+		public async Task<ActionResult> GetAllOrders([FromQuery] GetAllOrderQueryRequest getAllOrdersQueryRequest)
+		{
+			GetAllOrderQueryResponse response = await _mediator.Send(getAllOrdersQueryRequest);
+			return Ok(response);
+		}
+			
 		[HttpPost]
 		//[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Orders, ActionType = ActionType.Writing, Definition = "Create Order")]
 		public async Task<ActionResult> CreateOrder(CreateOrderCommandRequest createOrderCommandRequest)

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerceAPI.Application.Features.Queries.Order.GetOrderById
+namespace ECommerceAPI.Application.DTOs.Order
 {
-	public class GetOrderByIdQueryResponse
+	public class SingleOrder
 	{
 		public string Address { get; set; }
 		public object BasketItem { get; set; }
